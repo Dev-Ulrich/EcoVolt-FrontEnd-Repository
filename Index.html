@@ -12,154 +12,24 @@
 </head>
 
 <body>
-  <main class="page">
-    <section class="hero-section" id="home">
-      <div class="container hero-container">
-        <div class="hero-content">
-          <div class="badge badge-green">
-            <span class="icon-sm">⚡</span>
-            <span>Gamificação Sustentável</span>
-          </div>
-
-          <h1>
-            Transforme Ações Sustentáveis em
-            <span>Recompensas Reais</span>
-          </h1>
-
-          <p class="hero-description">
-            O EcoVolt é a solução de gamificação que incentiva práticas sustentáveis através de pontos,
-            missões e recompensas tangíveis na conta de energia.
-          </p>
-
-          <div class="hero-actions">
-            <button class="btn btn-primary" data-page="perfil">
-              Ver Perfil
-              <span>→</span>
-            </button>
-
-            <button class="btn btn-secondary" data-page="about">
-              Saiba Mais
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="container two-columns">
-        <article>
-          <div class="badge badge-red">O Problema</div>
-
-          <h2>Desafios da Sustentabilidade Digital</h2>
-
-          <ul class="check-list red-list">
-            <li>
-              <span class="list-icon">↗</span>
-              <span>Baixa retenção de usuários em plataformas sustentáveis</span>
-            </li>
-
-            <li>
-              <span class="list-icon">↗</span>
-              <span>Dificuldade em manter engajamento contínuo</span>
-            </li>
-
-            <li>
-              <span class="list-icon">🛡</span>
-              <span>Falta de validação de ações sustentáveis reais</span>
-            </li>
-          </ul>
-        </article>
-
-        <article>
-          <div class="badge badge-green">A Solução</div>
-
-          <h2>Sistema de Gamificação Inteligente</h2>
-
-          <p class="section-text">
-            O EcoVolt combina elementos de jogos com validação rigorosa de ações sustentáveis,
-            criando um ciclo de engajamento contínuo através de:
-          </p>
-
-          <ul class="check-list green-list">
-            <li>
-              <span class="list-icon">🏆</span>
-              <span>Sistema de pontos e níveis progressivos</span>
-            </li>
-
-            <li>
-              <span class="list-icon">🎥</span>
-              <span>Validação híbrida com IA e revisão manual</span>
-            </li>
-
-            <li>
-              <span class="list-icon">🎁</span>
-              <span>Recompensas tangíveis na conta de energia</span>
-            </li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="section features-section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Recursos Principais</h2>
-          <p>Tudo que você precisa para tornar suas ações sustentáveis em conquistas</p>
-        </div>
-
-        <div class="features-grid" id="featuresGrid"></div>
-      </div>
-    </section>
-
-    <section class="section" id="perfil">
-      <div class="container">
-        <div class="section-header">
-          <h2>Visualize Seu Progresso</h2>
-          <p>Perfil completo para acompanhar suas conquistas</p>
-        </div>
-
-        <div class="perfil-preview">
-          <div class="stats-grid">
-            <article class="stat-card stat-green">
-              <h3>Pontuação Mensal</h3>
-              <strong>1,284 pts</strong>
-              <p>36% para próximo nível</p>
-            </article>
-
-            <article class="stat-card stat-white">
-              <h3>Nível Atual</h3>
-              <strong>LVL 42</strong>
-              <p>Tier: Prata</p>
-            </article>
-
-            <article class="stat-card stat-gold">
-              <h3>Sequência</h3>
-              <strong>7 dias</strong>
-              <p>Continue assim!</p>
-            </article>
-          </div>
-
-          <div class="perfil-action">
-            <button class="btn btn-light" data-page="perfil">
-              Acessar Perfil Completo
-              <span>→</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-section" id="contact">
-      <div class="container cta-container">
-        <h2>Pronto para Fazer a Diferença?</h2>
-        <p>Junte-se ao EcoVolt e transforme suas ações sustentáveis em recompensas reais</p>
-
-        <button class="btn btn-white" data-page="contact">
-          Entre em Contato
-        </button>
-      </div>
-    </section>
-  </main>
+  <header id="header">
+    <div class="container header-content">
+      <a class="logo" href="../Index.html">
+        <div class="logo-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <span class="logo-text">EcoVolt</span>
+      </a>
+      <nav class="nav-desktop"><a href="../Index.html" class="nav-link ">Início</a><a href="Sobre.html" class="nav-link active">Sobre</a><a href="PerfilUsuario.html" class="nav-link ">Perfil</a><a href="FAQ.html" class="nav-link ">FAQ</a><a href="Time.html" class="nav-link ">Integrantes</a><a href="Contato.html" class="nav-link ">Contato</a></nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="navMobile"><a href="../Index.html" class="nav-link-mobile ">Início</a><a href="Sobre.html" class="nav-link-mobile active">Sobre</a><a href="PerfilUsuario.html" class="nav-link-mobile ">Perfil</a><a href="FAQ.html" class="nav-link-mobile ">FAQ</a><a href="Time.html" class="nav-link-mobile ">Integrantes</a><a href="Contato.html" class="nav-link-mobile ">Contato</a></nav>
+  </header>
+  
 
   <div class="toast" id="toast" aria-live="polite"></div>
 
