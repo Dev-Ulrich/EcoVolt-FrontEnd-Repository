@@ -1,31 +1,20 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const menuToggle = document.getElementById('menuToggle');
-  const navMobile = document.getElementById('navMobile');
+// FAQ Accordion
+const faqItems = document.querySelectorAll('.faq-item');
 
-  if (menuToggle && navMobile) {
-    menuToggle.addEventListener('click', () => {
-      menuToggle.classList.toggle('active');
-      navMobile.classList.toggle('active');
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq-question');
+
+  question.addEventListener('click', () => {
+    const isActive = item.classList.contains('active');
+
+    // Close all items
+    faqItems.forEach(otherItem => {
+      otherItem.classList.remove('active');
     });
-  }
-});
 
-function toggleFAQ(index) {
-  const questions = document.querySelectorAll('.faq-question');
-  const answers = document.querySelectorAll('.faq-answer');
-
-  questions.forEach((question, i) => {
-    if (i === index) {
-      question.classList.toggle('active');
-      answers[i].classList.toggle('active');
+    // Open clicked item if it wasn't active
+    if (!isActive) {
+      item.classList.add('active');
     }
-  });
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('[data-faq-index]').forEach((button) => {
-    button.addEventListener('click', () => {
-      toggleFAQ(Number(button.dataset.faqIndex));
-    });
   });
 });

@@ -1,21 +1,32 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const menuToggle = document.getElementById('menuToggle');
-  const navMobile = document.getElementById('navMobile');
+// Contact Form
+const contactForm = document.getElementById('contact-form');
+const successMessage = document.getElementById('success-message');
 
-  if (menuToggle && navMobile) {
-    menuToggle.addEventListener('click', () => {
-      menuToggle.classList.toggle('active');
-      navMobile.classList.toggle('active');
-    });
-  }
-});
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('contactForm');
+    // Show success message
+    if (successMessage) {
+      successMessage.textContent = 'Mensagem enviada com sucesso!';
+      successMessage.style.display = 'block';
+      successMessage.style.color = var(--accent-green);
+      successMessage.style.padding = '1rem';
+      successMessage.style.borderRadius = '8px';
+      successMessage.style.background = 'rgba(46, 230, 107, 0.1)';
+      successMessage.style.border = '1px solid var(--accent-green)';
+      successMessage.style.marginBottom = '1rem';
+      successMessage.style.textAlign = 'center';
+    }
 
-  form?.addEventListener('submit', (event) => {
-    event.preventDefault();
-    alert('Mensagem enviada com sucesso! ✅\nObrigado pelo contato. Retornaremos em breve!');
-    form.reset();
+    // Reset form
+    contactForm.reset();
+
+    // Hide message after 5 seconds
+    setTimeout(() => {
+      if (successMessage) {
+        successMessage.style.display = 'none';
+      }
+    }, 5000);
   });
-});
+}
