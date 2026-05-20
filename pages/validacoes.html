@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus Envios - EcoVolt</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/validacoes.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">EcoVolt</div>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="enviar-acao.html">Enviar Ação</a></li>
+        <li><a href="missoes.html">Missões</a></li>
+        <li><a href="ranking.html">Ranking</a></li>
+        <li><a href="recompensas.html">Recompensas</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="#" onclick="logout()" class="btn btn-secondary">Sair</a></li>
+        <li><button id="theme-toggle" class="theme-toggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="validations-section">
+      <h1 class="page-title">Meus envios</h1>
+
+      <div class="submissions-grid">
+        <div class="card submission-card">
+          <div class="submission-header">
+            <h3>🌱 Reciclagem de resíduos</h3>
+            <span class="badge badge-warning">Em análise</span>
+          </div>
+          <div class="submission-details">
+            <div class="detail-row">
+              <strong>Pontuação possível:</strong>
+              <span>70 pts</span>
+            </div>
+            <div class="detail-row">
+              <strong>Data de envio:</strong>
+              <span>20/05/2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card submission-card">
+          <div class="submission-header">
+            <h3>💧 Economia de água</h3>
+            <span class="badge badge-success">Aprovada</span>
+          </div>
+          <div class="submission-details">
+            <div class="detail-row">
+              <strong>Pontuação recebida:</strong>
+              <span class="points-earned">85 pts</span>
+            </div>
+            <div class="detail-row">
+              <strong>Data de aprovação:</strong>
+              <span>19/05/2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card submission-card refused">
+          <div class="submission-header">
+            <h3>🚲 Uso de transporte sustentável</h3>
+            <span class="badge badge-danger">Recusada</span>
+          </div>
+          <div class="submission-details">
+            <div class="detail-row">
+              <strong>Motivo:</strong>
+              <span>Vídeo não corresponde à ação escolhida</span>
+            </div>
+            <div class="detail-row">
+              <strong>Data de análise:</strong>
+              <span>18/05/2026</span>
+            </div>
+          </div>
+          <div class="submission-actions">
+            <a href="revisao.html" class="btn btn-secondary">Solicitar revisão</a>
+          </div>
+        </div>
+
+        <div class="card submission-card">
+          <div class="submission-header">
+            <h3>⚡ Economia de energia</h3>
+            <span class="badge badge-info">Em revisão manual</span>
+          </div>
+          <div class="submission-details">
+            <div class="detail-row">
+              <strong>Pontuação possível:</strong>
+              <span>90 pts</span>
+            </div>
+            <div class="detail-row">
+              <strong>Previsão de análise:</strong>
+              <span>22/05/2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 EcoVolt - FIAP Challenge SoulUp | Desenvolvido pela equipe EcoVolt</p>
+  </footer>
+
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/auth.js"></script>
+</body>
+</html>

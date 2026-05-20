@@ -3,366 +3,176 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="EcoVolt - Gamificação sustentável integrada à SoulUp">
-  <title>EcoVolt - Perfil do Usuário</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/PerfilUsuario.css">
+  <title>Perfil - EcoVolt</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/perfil.css">
 </head>
 <body>
-<header id="header">
-  <div class="container header-content">
-        <a class="logo" href="../Index.html">
-            <div class="logo-icon"><img src="../assets/image/ecovolt_logo_sem_fundo.png" alt="EcoVolt logo"></div>
-            <span class="logo-text">EcoVolt</span>
-        </a>
-    <nav class="nav-desktop"><a href="../Index.html" class="nav-link ">Início</a><a href="PerfilUsuario.html" class="nav-link active">Perfil</a><a href="Sobre.html" class="nav-link ">Sobre</a><a href="FAQ.html" class="nav-link ">FAQ</a><a href="Time.html" class="nav-link ">Integrantes</a><a href="Contato.html" class="nav-link ">Contato</a></nav>
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-    <nav class="nav-mobile" id="navMobile"><a href="../Index.html" class="nav-link-mobile ">Início</a><a href="PerfilUsuario.html" class="nav-link-mobile active">Perfil</a><a href="Sobre.html" class="nav-link-mobile ">Sobre</a><a href="FAQ.html" class="nav-link-mobile ">FAQ</a><a href="Time.html" class="nav-link-mobile ">Integrantes</a><a href="Contato.html" class="nav-link-mobile ">Contato</a></nav>
-</header>
-<main>
- 
-        <div style="min-height: 100vh; background: var(--gray-50); padding: 2rem 0;">
-            <div class="container">
-                <!-- Header do Perfil -->
-                <div class="card mb-3">
-                    <div class="flex items-center gap-2">
-                        <div style="width: 64px; height: 64px; background: linear-gradient(135deg, #86EFAC, var(--green-primary)); border-radius: 50%; display: flex; align-items: center; justify-center; font-size: 2rem;">
-                            🌿
-                        </div>
-                        <div>
-                            <h1 class="heading-md" style="margin-bottom: 0.25rem;">Olá, Ana! 👋</h1>
-                            <p class="text-muted">Que bom te ver por aqui!</p>z
-                        </div>
-                    </div>
-                </div>
- 
-                <!-- Cards Principais -->
-                <div class="grid grid-3 gap-3 mb-3">
-                    <div style="grid-column: span 2; background: linear-gradient(135deg, #15803d, #10b981); color: white; border-radius: 16px; padding: 2rem; box-shadow: var(--shadow-md);">
-                        <div class="flex" style="justify-content: space-between; margin-bottom: 1.5rem;">
-                            <div>
-                                <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 0.5rem;">Seu tier</p>
-                                <p class="heading-lg" style="margin-bottom: 0;">Prata</p>
-                            </div>
-                            <div style="text-align: right;">
-                                <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 0.5rem;">Seu nível</p>
-                                <p class="heading-lg" style="margin-bottom: 0;">LVL 42</p>
-                            </div>
-                        </div>
- 
-                        <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 12px; padding: 1.5rem;">
-                            <div class="flex" style="justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
-                                <p style="font-size: 2.25rem; font-weight: 700; margin: 0;">1,284 pts</p>
-                                <p style="color: rgba(255, 255, 255, 0.8);">716 / 2000 XP</p>
-                            </div>
-                            <p style="font-size: 0.875rem; color: rgba(255, 255, 255, 0.8); margin-bottom: 0.75rem;">para o próximo nível</p>
- 
-                            <div class="progress-bar" style="background: rgba(255, 255, 255, 0.2);">
-                                <div class="progress-fill" style="width: 36%; background: rgba(255, 255, 255, 0.9);"></div>
-                            </div>
-                            <p style="font-size: 0.875rem; color: rgba(255, 255, 255, 0.8); margin-top: 0.5rem;">36% completo</p>
-                        </div>
-                    </div>
- 
-                    <div class="card">
-                        <div class="flex items-center gap-2 mb-2">
-                            <div style="width: 48px; height: 48px; background: rgba(251, 146, 60, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-                                🔥
-                            </div>
-                            <div>
-                                <p class="text-muted" style="font-size: 0.875rem;">Sequência de acessos</p>
-                                <p class="heading-sm" style="margin: 0;">7 dias 🔥</p>
-                            </div>
-                        </div>
-                        <p class="text-muted mb-2" style="font-size: 0.875rem;">Continue assim!</p>
-                    </div>
-                </div>
- 
-                <!-- Missões Semanais -->
-                <div class="card mb-3">
-                    <div class="flex" style="justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-                        <h2 class="heading-md" style="margin: 0;">Missões da Semana</h2>
-                        <span class="text-muted" style="font-size: 0.875rem;">3 missões ativas</span>
-                    </div>
- 
-                    <div class="mb-4">
-                        
-        <div style="border: 1px solid rgba(34, 197, 94, 0.3); border-radius: 12px; padding: 1rem; margin-bottom: 1rem;">
-            <div class="flex" style="justify-content: space-between; align-items: start; margin-bottom: 0.75rem;">
-                <div style="flex: 1;">
-                    <h3 style="font-weight: 600; margin-bottom: 0.25rem;">Economize energia em casa</h3>
-                    <p style="font-size: 0.875rem; color: var(--gray-600);">Economize pelo menos 10% de energia esta semana</p>
-                </div>
-                <span class="badge" style="margin-left: 1rem; white-space: nowrap;">+150 pts</span>
+  <header>
+    <nav>
+      <div class="logo">EcoVolt</div>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="enviar-acao.html">Enviar Ação</a></li>
+        <li><a href="missoes.html">Missões</a></li>
+        <li><a href="ranking.html">Ranking</a></li>
+        <li><a href="recompensas.html">Recompensas</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="#" onclick="logout()" class="btn btn-secondary">Sair</a></li>
+        <li><button id="theme-toggle" class="theme-toggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="profile-section">
+      <h1 class="page-title">Perfil</h1>
+
+      <!-- Profile Header Card -->
+      <div class="card profile-header-card">
+        <div class="profile-main">
+          <div class="profile-avatar">👤</div>
+          <div class="profile-info">
+            <h2 class="profile-name"><span class="user-name">Usuário</span></h2>
+            <div class="profile-stats">
+              <div class="stat-item">
+                <span class="stat-icon">⚡</span>
+                <span class="stat-text">LVL 28</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-icon">🏆</span>
+                <span class="stat-text">Tier Bronze</span>
+              </div>
             </div>
- 
-            <div class="flex items-center gap-2">
-                <div class="progress-bar" style="flex: 1;">
-                    <div class="progress-fill" style="width: 65%;"></div>
-                </div>
-                <span style="font-size: 0.875rem; font-weight: 500; color: var(--gray-600); min-width: 60px; text-align: right;">
-                    65%
-                </span>
-            </div>
-            
-            
-        </div>
-    
-        <div style="border: 1px solid rgba(34, 197, 94, 0.3); border-radius: 12px; padding: 1rem; margin-bottom: 1rem;">
-            <div class="flex" style="justify-content: space-between; align-items: start; margin-bottom: 0.75rem;">
-                <div style="flex: 1;">
-                    <h3 style="font-weight: 600; margin-bottom: 0.25rem;">Use transporte sustentável</h3>
-                    <p style="font-size: 0.875rem; color: var(--gray-600);">Use bicicleta ou transporte público 5 vezes</p>
-                </div>
-                <span class="badge" style="margin-left: 1rem; white-space: nowrap;">+120 pts</span>
-            </div>
- 
-            <div class="flex items-center gap-2">
-                <div class="progress-bar" style="flex: 1;">
-                    <div class="progress-fill" style="width: 40%;"></div>
-                </div>
-                <span style="font-size: 0.875rem; font-weight: 500; color: var(--gray-600); min-width: 60px; text-align: right;">
-                    40%
-                </span>
-            </div>
-            
-            
-        </div>
-    
-        <div style="border: 1px solid rgba(34, 197, 94, 0.3); border-radius: 12px; padding: 1rem; margin-bottom: 1rem;">
-            <div class="flex" style="justify-content: space-between; align-items: start; margin-bottom: 0.75rem;">
-                <div style="flex: 1;">
-                    <h3 style="font-weight: 600; margin-bottom: 0.25rem;">Recicle corretamente</h3>
-                    <p style="font-size: 0.875rem; color: var(--gray-600);">Separe e recicle pelo menos 3 tipos de materiais</p>
-                </div>
-                <span class="badge" style="margin-left: 1rem; white-space: nowrap;">+100 pts</span>
-            </div>
- 
-            <div class="flex items-center gap-2">
-                <div class="progress-bar" style="flex: 1;">
-                    <div class="progress-fill" style="width: 100%;"></div>
-                </div>
-                <span style="font-size: 0.875rem; font-weight: 500; color: var(--gray-600); min-width: 60px; text-align: right;">
-                    100%
-                </span>
-            </div>
-            
-            <p style="color: var(--green-primary); font-size: 0.875rem; font-weight: 500; margin-top: 0.5rem;">✓ Missão completa!</p>
-        </div>
-    
-                    </div>
- 
-                    <button id="openActionModal" class="btn btn-primary" style="width: 100%;">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="23 7 16 12 23 17 23 7"/>
-                            <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
-                        </svg>
-                        Enviar Ação Sustentável
-                    </button>
-                </div>
- 
-                <!-- Ranking e Conquistas -->
-                <div class="grid grid-2 gap-3">
-                    <div class="card">
-                        <h2 class="heading-md mb-3">Ranking Global</h2>
-                        
-        <div style="display: flex; align-items: center; gap: 1rem; padding: 0.75rem; border-radius: 12px; margin-bottom: 0.75rem; background: var(--gray-50);">
-            <div style="width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; background: #FBBF24; color: #78350F;">
-                1
-            </div>
-            <div style="flex: 1;">
-                <p style="font-weight: 600; margin-bottom: 0.125rem;">Ana Silva</p>
-                <p style="font-size: 0.875rem; color: var(--gray-600);">Tier: Diamante</p>
-            </div>
-            <div style="text-align: right;">
-                <p style="font-weight: 700;">2,840</p>
-                <p style="font-size: 0.75rem; color: var(--gray-600);">pontos</p>
-            </div>
-        </div>
-    
-        <div style="display: flex; align-items: center; gap: 1rem; padding: 0.75rem; border-radius: 12px; margin-bottom: 0.75rem; background: var(--gray-50);">
-            <div style="width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; background: #D1D5DB; color: #374151;">
-                2
-            </div>
-            <div style="flex: 1;">
-                <p style="font-weight: 600; margin-bottom: 0.125rem;">Carlos Souza</p>
-                <p style="font-size: 0.875rem; color: var(--gray-600);">Tier: Diamante</p>
-            </div>
-            <div style="text-align: right;">
-                <p style="font-weight: 700;">2,610</p>
-                <p style="font-size: 0.75rem; color: var(--gray-600);">pontos</p>
-            </div>
-        </div>
-    
-        <div style="display: flex; align-items: center; gap: 1rem; padding: 0.75rem; border-radius: 12px; margin-bottom: 0.75rem; background: rgba(34, 197, 94, 0.1); border: 2px solid var(--green-primary);">
-            <div style="width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; background: #FB923C; color: #7C2D12;">
-                3
-            </div>
-            <div style="flex: 1;">
-                <p style="font-weight: 600; margin-bottom: 0.125rem;">Você</p>
-                <p style="font-size: 0.875rem; color: var(--gray-600);">Tier: Prata</p>
-            </div>
-            <div style="text-align: right;">
-                <p style="font-weight: 700;">1,284</p>
-                <p style="font-size: 0.75rem; color: var(--gray-600);">pontos</p>
-            </div>
-        </div>
-    
-        <div style="display: flex; align-items: center; gap: 1rem; padding: 0.75rem; border-radius: 12px; margin-bottom: 0.75rem; background: var(--gray-50);">
-            <div style="width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; background: var(--gray-200); color: var(--gray-600);">
-                4
-            </div>
-            <div style="flex: 1;">
-                <p style="font-weight: 600; margin-bottom: 0.125rem;">Maria Santos</p>
-                <p style="font-size: 0.875rem; color: var(--gray-600);">Tier: Prata</p>
-            </div>
-            <div style="text-align: right;">
-                <p style="font-weight: 700;">1,150</p>
-                <p style="font-size: 0.75rem; color: var(--gray-600);">pontos</p>
-            </div>
-        </div>
-    
-        <div style="display: flex; align-items: center; gap: 1rem; padding: 0.75rem; border-radius: 12px; margin-bottom: 0.75rem; background: var(--gray-50);">
-            <div style="width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; background: var(--gray-200); color: var(--gray-600);">
-                5
-            </div>
-            <div style="flex: 1;">
-                <p style="font-weight: 600; margin-bottom: 0.125rem;">João Oliveira</p>
-                <p style="font-size: 0.875rem; color: var(--gray-600);">Tier: Bronze</p>
-            </div>
-            <div style="text-align: right;">
-                <p style="font-weight: 700;">980</p>
-                <p style="font-size: 0.75rem; color: var(--gray-600);">pontos</p>
-            </div>
-        </div>
-    
-                    </div>
- 
-                    <div class="card">
-                        <h2 class="heading-md mb-3">Conquistas</h2>
-                        
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1.5rem;">
-            
-                <div style="aspect-ratio: 1; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0.75rem; background: linear-gradient(135deg, rgba(250, 204, 21, 0.2), rgba(245, 158, 11, 0.2)); border: 2px solid var(--yellow-highlight);">
-                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🌱</div>
-                    <p style="font-size: 0.75rem; font-weight: 500; text-align: center; color: var(--gray-700);">Primeira Ação</p>
-                </div>
-            
-                <div style="aspect-ratio: 1; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0.75rem; background: linear-gradient(135deg, rgba(250, 204, 21, 0.2), rgba(245, 158, 11, 0.2)); border: 2px solid var(--yellow-highlight);">
-                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔥</div>
-                    <p style="font-size: 0.75rem; font-weight: 500; text-align: center; color: var(--gray-700);">7 Dias Seguidos</p>
-                </div>
-            
-                <div style="aspect-ratio: 1; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0.75rem; background: linear-gradient(135deg, rgba(250, 204, 21, 0.2), rgba(245, 158, 11, 0.2)); border: 2px solid var(--yellow-highlight);">
-                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">⭐</div>
-                    <p style="font-size: 0.75rem; font-weight: 500; text-align: center; color: var(--gray-700);">Nível 10</p>
-                </div>
-            
-                <div style="aspect-ratio: 1; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0.75rem; background: linear-gradient(135deg, rgba(250, 204, 21, 0.2), rgba(245, 158, 11, 0.2)); border: 2px solid var(--yellow-highlight);">
-                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">♻️</div>
-                    <p style="font-size: 0.75rem; font-weight: 500; text-align: center; color: var(--gray-700);">Mestre da Reciclagem</p>
-                </div>
-            
-                <div style="aspect-ratio: 1; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0.75rem; background: var(--gray-100); opacity: 0.5;">
-                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏆</div>
-                    <p style="font-size: 0.75rem; font-weight: 500; text-align: center; color: var(--gray-700);">Eco Warrior</p>
-                </div>
-            
-                <div style="aspect-ratio: 1; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0.75rem; background: var(--gray-100); opacity: 0.5;">
-                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">💎</div>
-                    <p style="font-size: 0.75rem; font-weight: 500; text-align: center; color: var(--gray-700);">Sustentabilístico</p>
-                </div>
-            
-        </div>
-    
-                        
-                        <div style="margin-top: 1.5rem; padding: 1rem; background: linear-gradient(90deg, rgba(250, 204, 21, 0.1), rgba(245, 158, 11, 0.1)); border-radius: 12px; border: 1px solid rgba(250, 204, 21, 0.3);">
-                            <p style="font-weight: 600; margin-bottom: 0.25rem;">Recompensa Atual</p>
-                            <p style="font-size: 0.875rem; color: var(--gray-600);">Subsídio de até R$ 300 na conta de energia</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
 
-        </main>
-<footer id="footer">
-  <div class="container footer-content">
-    <div class="footer-grid">
-      <div class="footer-about">
-        <div class="footer-logo">
-          <div class="logo-icon"><img src="../assets/image/ecovolt_logo_sem_fundo.png" alt="EcoVolt logo"></div>
-          <span class="logo-text">EcoVolt</span>
-        </div>
-        <p class="footer-description">Gamificação sustentável integrada à plataforma SoulUp. Incentivando ações sustentáveis reais por meio de pontuação, missões e recompensas.</p>
-      </div>
-      <div class="footer-links">
-        <h3>Links Rápidos</h3>
-        <ul><li><a href="../Index.html">Início</a></li><li><a href="Sobre.html">Sobre</a></li><li><a href="PerfilUsuario.html">Perfil</a></li><li><a href="FAQ.html">FAQ</a></li></ul>
-      </div>
-      <div class="footer-social">
-        <h3>Conecte-se</h3>
-        <div class="social-links">
-          <a href="https://github.com/ecovolt-project" target="_blank" rel="noopener noreferrer" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-          <a href="mailto:ecovolt@fiap.com.br" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        <div class="xp-section">
+          <div class="xp-info">
+            <span>XP</span>
+            <span class="xp-value">620/1000</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 62%"></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2026 EcoVolt - Challenge FIAP. Todos os direitos reservados.</p>
-    </div>
-  </div>
-</footer>
- 
-<div id="actionModal" class="modal">
-        <div class="modal-content">
-            <button type="button" class="modal-close" id="closeActionModal" aria-label="Fechar">&times;</button>
-            <h2>Enviar Ação Sustentável</h2>
- 
-            <form id="actionForm">
-                <div class="form-group">
-                    <label for="actionCategory">Categoria da Ação</label>
-                    <select id="actionCategory" required>
-                        <option value="">Selecione uma categoria</option>
-                        <option value="energia">Economia de Energia</option>
-                        <option value="transporte">Transporte Sustentável</option>
-                        <option value="reciclagem">Reciclagem</option>
-                        <option value="reducao">Redução de Consumo</option>
-                        <option value="outro">Outro</option>
-                    </select>
-                </div>
- 
-                <div class="form-group">
-                    <label for="actionDescription">Descrição</label>
-                    <textarea id="actionDescription" rows="3" placeholder="Descreva sua ação sustentável..." required></textarea>
-                </div>
- 
-                <div class="form-group">
-                    <label>Vídeo de Comprovação</label>
-                    <div class="file-upload" id="fileUploadBox">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M23 7l-7 5 7 5V7z"/>
-                            <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
-                        </svg>
-                        <p>Clique para fazer upload do vídeo</p>
-                        <p class="file-hint">Máx. 60 segundos</p>
-                        <input type="file" id="videoUpload" accept="video/*" style="display:none;">
-                    </div>
-                </div>
- 
-                <div class="modal-actions">
-                    <button type="button" class="btn btn-secondary" id="cancelActionModal">Cancelar</button>
-                    <button type="submit" class="btn btn-primary">Enviar para Validação</button>
-                </div>
-            </form>
+
+      <div class="profile-grid">
+        <!-- Achievements -->
+        <div class="card achievements-card">
+          <h3>🏅 Conquistas</h3>
+          <div class="achievements-list">
+            <div class="achievement-item unlocked">
+              <div class="achievement-icon">✅</div>
+              <div class="achievement-info">
+                <div class="achievement-name">Primeira ação validada</div>
+                <div class="achievement-date">Desbloqueado em 10/05/2026</div>
+              </div>
+            </div>
+
+            <div class="achievement-item unlocked">
+              <div class="achievement-icon">🔥</div>
+              <div class="achievement-info">
+                <div class="achievement-name">7 dias de login</div>
+                <div class="achievement-date">Desbloqueado em 17/05/2026</div>
+              </div>
+            </div>
+
+            <div class="achievement-item unlocked">
+              <div class="achievement-icon">🌱</div>
+              <div class="achievement-info">
+                <div class="achievement-name">10 ações sustentáveis</div>
+                <div class="achievement-date">Desbloqueado em 19/05/2026</div>
+              </div>
+            </div>
+
+            <div class="achievement-item locked">
+              <div class="achievement-icon">🏆</div>
+              <div class="achievement-info">
+                <div class="achievement-name">Top 10 semanal</div>
+                <div class="achievement-date">Bloqueado</div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-<script src="../assets/js/PerfilUsuario.js"></script>
+
+        <!-- ODS Favorites -->
+        <div class="card ods-card">
+          <h3>🎯 ODS Favoritas</h3>
+          <div class="ods-list">
+            <div class="ods-item">
+              <div class="ods-number">7</div>
+              <div class="ods-info">
+                <div class="ods-name">Energia Limpa</div>
+                <div class="ods-count">8 ações</div>
+              </div>
+            </div>
+
+            <div class="ods-item">
+              <div class="ods-number">12</div>
+              <div class="ods-info">
+                <div class="ods-name">Consumo Responsável</div>
+                <div class="ods-count">5 ações</div>
+              </div>
+            </div>
+
+            <div class="ods-item">
+              <div class="ods-number">13</div>
+              <div class="ods-info">
+                <div class="ods-name">Ação Climática</div>
+                <div class="ods-count">3 ações</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Impact Stats -->
+      <div class="card impact-card">
+        <h3>📊 Estatísticas de Impacto</h3>
+        <div class="impact-grid">
+          <div class="impact-stat">
+            <div class="impact-icon">🌍</div>
+            <div class="impact-value">16</div>
+            <div class="impact-label">Ações Sustentáveis</div>
+          </div>
+
+          <div class="impact-stat">
+            <div class="impact-icon">⭐</div>
+            <div class="impact-value">1.240</div>
+            <div class="impact-label">Pontos Totais</div>
+          </div>
+
+          <div class="impact-stat">
+            <div class="impact-icon">🔥</div>
+            <div class="impact-value">6</div>
+            <div class="impact-label">Sequência Atual</div>
+          </div>
+
+          <div class="impact-stat">
+            <div class="impact-icon">🎯</div>
+            <div class="impact-value">12º</div>
+            <div class="impact-label">Posição Ranking</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 EcoVolt - FIAP Challenge SoulUp | Desenvolvido pela equipe EcoVolt</p>
+  </footer>
+
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/auth.js"></script>
 </body>
 </html>

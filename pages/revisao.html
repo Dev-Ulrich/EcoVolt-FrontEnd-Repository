@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitar Revisão - EcoVolt</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/revisao.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">EcoVolt</div>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="enviar-acao.html">Enviar Ação</a></li>
+        <li><a href="missoes.html">Missões</a></li>
+        <li><a href="ranking.html">Ranking</a></li>
+        <li><a href="recompensas.html">Recompensas</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="#" onclick="logout()" class="btn btn-secondary">Sair</a></li>
+        <li><button id="theme-toggle" class="theme-toggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="revision-section">
+      <h1 class="page-title">Solicitar revisão</h1>
+
+      <div class="revision-container">
+        <!-- Action Details -->
+        <div class="card action-details-card">
+          <h2>Detalhes da ação recusada</h2>
+          
+          <div class="detail-row">
+            <strong>Ação:</strong>
+            <span>Uso de transporte sustentável</span>
+          </div>
+
+          <div class="detail-row">
+            <strong>Data de envio:</strong>
+            <span>18/05/2026</span>
+          </div>
+
+          <div class="detail-row">
+            <strong>Status atual:</strong>
+            <span class="badge badge-danger">Recusada</span>
+          </div>
+
+          <div class="detail-row">
+            <strong>Motivo da recusa:</strong>
+            <span class="refusal-reason">Vídeo não comprova claramente a ação.</span>
+          </div>
+        </div>
+
+        <!-- Revision Form -->
+        <div class="card revision-form-card">
+          <h2>Justificativa para revisão</h2>
+          <p class="form-subtitle">Explique por que você acredita que sua ação deveria ser aprovada.</p>
+
+          <form id="revision-form">
+            <div class="form-group">
+              <label for="justification">Sua justificativa</label>
+              <textarea 
+                id="justification" 
+                rows="8" 
+                placeholder="Descreva detalhadamente por que você acredita que a ação foi recusada incorretamente..." 
+                required
+              ></textarea>
+            </div>
+
+            <div class="info-box">
+              <h3>ℹ️ Importante</h3>
+              <ul>
+                <li>Seja específico e detalhado na sua justificativa</li>
+                <li>A revisão será feita manualmente por nossa equipe</li>
+                <li>O prazo de resposta é de até 3 dias úteis</li>
+                <li>Você receberá uma notificação com o resultado</li>
+              </ul>
+            </div>
+
+            <div id="revision-message" style="display: none;"></div>
+
+            <div class="form-actions">
+              <a href="validacoes.html" class="btn btn-secondary">Cancelar</a>
+              <button type="submit" class="btn btn-primary">Enviar recurso</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 EcoVolt - FIAP Challenge SoulUp | Desenvolvido pela equipe EcoVolt</p>
+  </footer>
+
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/auth.js"></script>
+  <script src="../assets/js/revisao.js"></script>
+</body>
+</html>

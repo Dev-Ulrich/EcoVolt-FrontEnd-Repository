@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enviar Ação - EcoVolt</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/enviar-acao.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">EcoVolt</div>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="enviar-acao.html">Enviar Ação</a></li>
+        <li><a href="missoes.html">Missões</a></li>
+        <li><a href="ranking.html">Ranking</a></li>
+        <li><a href="recompensas.html">Recompensas</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="#" onclick="logout()" class="btn btn-secondary">Sair</a></li>
+        <li><button id="theme-toggle" class="theme-toggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="submit-action-section">
+      <h1 class="page-title">Enviar ação sustentável</h1>
+
+      <div class="form-container">
+        <form id="action-form" class="card">
+          <div class="form-group">
+            <label for="action-type">Selecionar ação sustentável</label>
+            <select id="action-type" required>
+              <option value="">Escolha uma ação</option>
+              <option value="reciclagem">Reciclagem de resíduos</option>
+              <option value="agua">Economia de água</option>
+              <option value="transporte">Uso de transporte sustentável</option>
+              <option value="energia">Economia de energia</option>
+              <option value="compostagem">Compostagem orgânica</option>
+              <option value="reflorestamento">Plantio de árvores</option>
+            </select>
+          </div>
+
+          <div class="action-details" id="action-details" style="display: none;">
+            <div class="detail-item">
+              <strong>ODS relacionada:</strong>
+              <span id="ods-display">ODS 12 — Consumo e Produção Responsáveis</span>
+            </div>
+            <div class="detail-item">
+              <strong>Pontuação estimada:</strong>
+              <span id="points-display" class="points-highlight">Até 70 pontos</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="video-upload">Upload de vídeo</label>
+            <div class="upload-area">
+              <input type="file" id="video-upload" accept="video/*" required>
+              <div class="upload-placeholder">
+                <span class="upload-icon">📹</span>
+                <p>Clique para selecionar ou arraste o vídeo</p>
+                <p class="upload-hint">Formatos aceitos: MP4, MOV, AVI</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="observation">Observação (opcional)</label>
+            <textarea id="observation" rows="4" placeholder="Adicione detalhes sobre sua ação..."></textarea>
+          </div>
+
+          <div class="rules-box">
+            <h3>⚠️ Regras importantes</h3>
+            <ul>
+              <li>O vídeo precisa mostrar a ação sendo realizada</li>
+              <li>A ação será analisada por validação automática e, se necessário, revisão manual</li>
+              <li>Ações repetidas podem valer menos pontos</li>
+              <li>Cada ação específica possui limite de repetições</li>
+            </ul>
+          </div>
+
+          <div id="submit-message" style="display: none;"></div>
+
+          <button type="submit" class="btn btn-primary">Enviar para validação</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 EcoVolt - FIAP Challenge SoulUp | Desenvolvido pela equipe EcoVolt</p>
+  </footer>
+
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/auth.js"></script>
+  <script src="../assets/js/enviar-acao.js"></script>
+</body>
+</html>

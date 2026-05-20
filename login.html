@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - EcoVolt</title>
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card card">
+      <div class="login-logo">EcoVolt</div>
+
+      <h1>Entrar no EcoVolt</h1>
+      <p class="login-subtitle">Acesse a plataforma gamificada do EcoVolt</p>
+
+      <form id="login-form">
+        <div class="form-group">
+          <label for="username">Usuário</label>
+          <input type="text" id="username" placeholder="Digite seu usuário" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Senha</label>
+          <input type="password" id="password" placeholder="Digite sua senha" required>
+        </div>
+
+        <div id="error-message" style="display: none;"></div>
+
+        <button type="submit" class="btn btn-primary">Entrar</button>
+      </form>
+
+      <div class="login-footer">
+        <a href="index.html">← Voltar para início</a>
+      </div>
+
+      <button id="theme-toggle" class="theme-toggle theme-toggle-fixed">🌙</button>
+    </div>
+  </div>
+
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/login.js"></script>
+</body>
+</html>

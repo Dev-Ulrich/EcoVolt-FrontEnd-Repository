@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ranking - EcoVolt</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/ranking.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">EcoVolt</div>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="enviar-acao.html">Enviar Ação</a></li>
+        <li><a href="missoes.html">Missões</a></li>
+        <li><a href="ranking.html">Ranking</a></li>
+        <li><a href="recompensas.html">Recompensas</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="#" onclick="logout()" class="btn btn-secondary">Sair</a></li>
+        <li><button id="theme-toggle" class="theme-toggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="ranking-section">
+      <h1 class="page-title">Ranking mensal</h1>
+
+      <!-- Tier Info Card -->
+      <div class="card tier-info-card">
+        <div class="tier-info-content">
+          <div class="current-tier">
+            <h3>Seu tier atual</h3>
+            <div class="tier-badge bronze">🥉 Bronze</div>
+          </div>
+          <div class="tier-rules">
+            <p>No Bronze, o top 10% sobe para Prata. Os últimos 20% descem para Ferro. Usuários com 0 pontos também descem.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Position Card -->
+      <div class="card user-position-card">
+        <h3>Sua posição</h3>
+        <div class="position-content">
+          <div class="position-number">12º</div>
+          <div class="position-details">
+            <p>Você está no <strong>top 40%</strong></p>
+            <p class="encouragement">Continue assim para subir de tier! 🚀</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ranking List -->
+      <div class="card ranking-card">
+        <h2>Bronze - Maio 2026</h2>
+
+        <div class="ranking-list">
+          <div class="ranking-item podium first-place">
+            <div class="rank-number">🥇 1º</div>
+            <div class="rank-info">
+              <div class="rank-name">Ana Silva</div>
+              <div class="rank-tier">Bronze</div>
+            </div>
+            <div class="rank-points">3.420 pts</div>
+          </div>
+
+          <div class="ranking-item podium second-place">
+            <div class="rank-number">🥈 2º</div>
+            <div class="rank-info">
+              <div class="rank-name">Lucas Santos</div>
+              <div class="rank-tier">Bronze</div>
+            </div>
+            <div class="rank-points">3.100 pts</div>
+          </div>
+
+          <div class="ranking-item podium third-place">
+            <div class="rank-number">🥉 3º</div>
+            <div class="rank-info">
+              <div class="rank-name">Mariana Costa</div>
+              <div class="rank-tier">Bronze</div>
+            </div>
+            <div class="rank-points">2.870 pts</div>
+          </div>
+
+          <div class="ranking-item">
+            <div class="rank-number">4º</div>
+            <div class="rank-info">
+              <div class="rank-name">Pedro Oliveira</div>
+              <div class="rank-tier">Bronze</div>
+            </div>
+            <div class="rank-points">2.650 pts</div>
+          </div>
+
+          <div class="ranking-item">
+            <div class="rank-number">5º</div>
+            <div class="rank-info">
+              <div class="rank-name">Juliana Lima</div>
+              <div class="rank-tier">Bronze</div>
+            </div>
+            <div class="rank-points">2.400 pts</div>
+          </div>
+
+          <div class="ranking-item">
+            <div class="rank-number">...</div>
+            <div class="rank-info">
+              <div class="rank-name">...</div>
+            </div>
+            <div class="rank-points">...</div>
+          </div>
+
+          <div class="ranking-item current-user">
+            <div class="rank-number">12º</div>
+            <div class="rank-info">
+              <div class="rank-name"><span class="user-name">Victor Ulrich</span> (Você)</div>
+              <div class="rank-tier">Bronze</div>
+            </div>
+            <div class="rank-points">1.240 pts</div>
+          </div>
+
+          <div class="ranking-item">
+            <div class="rank-number">13º</div>
+            <div class="rank-info">
+              <div class="rank-name">Carlos Mendes</div>
+              <div class="rank-tier">Bronze</div>
+            </div>
+            <div class="rank-points">1.180 pts</div>
+          </div>
+
+          <div class="ranking-item">
+            <div class="rank-number">14º</div>
+            <div class="rank-info">
+              <div class="rank-name">Beatriz Alves</div>
+              <div class="rank-tier">Bronze</div>
+            </div>
+            <div class="rank-points">1.120 pts</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 EcoVolt - FIAP Challenge SoulUp | Desenvolvido pela equipe EcoVolt</p>
+  </footer>
+
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/auth.js"></script>
+</body>
+</html>

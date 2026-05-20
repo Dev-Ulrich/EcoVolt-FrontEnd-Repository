@@ -3,211 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="EcoVolt - Gamificação sustentável integrada à SoulUp">
-  <title>EcoVolt - FAQ</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/FAQ.css">
+  <title>FAQ - EcoVolt</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/faq.css">
 </head>
 <body>
-<header id="header">
-  <div class="container header-content">
-        <a class="logo" href="../Index.html">
-            <div class="logo-icon"><img src="../assets/image/ecovolt_logo_sem_fundo.png" alt="EcoVolt logo"></div>
-            <span class="logo-text">EcoVolt</span>
-        </a>
-    <nav class="nav-desktop"><a href="../Index.html" class="nav-link ">Início</a><a href="PerfilUsuario.html" class="nav-link ">Perfil</a><a href="Sobre.html" class="nav-link ">Sobre</a><a href="FAQ.html" class="nav-link active">FAQ</a><a href="Time.html" class="nav-link ">Integrantes</a><a href="Contato.html" class="nav-link ">Contato</a></nav>
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-    <nav class="nav-mobile" id="navMobile"><a href="../Index.html" class="nav-link-mobile ">Início</a><a href="PerfilUsuario.html" class="nav-link-mobile ">Perfil</a><a href="Sobre.html" class="nav-link-mobile ">Sobre</a><a href="FAQ.html" class="nav-link-mobile active">FAQ</a><a href="Time.html" class="nav-link-mobile ">Integrantes</a><a href="Contato.html" class="nav-link-mobile ">Contato</a></nav>
-</header>
-<main>
+  <header>
+    <nav>
+      <div class="logo">EcoVolt</div>
 
-        <div style="min-height: 100vh; background: var(--gray-50); padding: 4rem 0;">
-            <div class="container">
-                <div class="max-w-4xl" style="margin: 0 auto;">
-                    <div class="text-center mb-6">
-                        <div style="width: 64px; height: 64px; background: linear-gradient(135deg, var(--green-primary), #10B981); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"/>
-                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
-                                <line x1="12" y1="17" x2="12.01" y2="17"/>
-                            </svg>
-                        </div>
-                        <h1 class="heading-xl mb-2">Perguntas Frequentes</h1>
-                        <p class="text-lg text-muted">Tire suas dúvidas sobre o EcoVolt</p>
-                    </div>
-
-                    <div id="faqList">
-                        
-                            <div class="faq-item">
-                                <button class="faq-question active" data-faq-index="0">
-                                    <span>O que é o EcoVolt?</span>
-                                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="6 9 12 15 18 9"/>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer active">
-                                    <div class="faq-answer-content">O EcoVolt é uma solução de gamificação sustentável integrada à plataforma SoulUp. Ele incentiva usuários a praticarem ações sustentáveis reais através de um sistema de pontuação, missões semanais, ranking por níveis, conquistas, login diário e recompensas tangíveis como subsídio na conta de energia.</div>
-                                </div>
-                            </div>
-                        
-                            <div class="faq-item">
-                                <button class="faq-question " data-faq-index="1">
-                                    <span>Como o usuário ganha pontos?</span>
-                                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="6 9 12 15 18 9"/>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer ">
-                                    <div class="faq-answer-content">O usuário ganha pontos realizando ações sustentáveis e enviando comprovação em vídeo. Cada ação é avaliada e recebe uma pontuação de 0 a 100 baseada em critérios como impacto ambiental, dificuldade e autenticidade.</div>
-                                </div>
-                            </div>
-                        
-                            <div class="faq-item">
-                                <button class="faq-question " data-faq-index="2">
-                                    <span>Como funcionam as missões semanais?</span>
-                                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="6 9 12 15 18 9"/>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer ">
-                                    <div class="faq-answer-content">As missões semanais são desafios personalizados que renovam toda semana. Elas podem incluir metas como "Economize 10% de energia", "Use transporte sustentável 5 vezes" ou "Recicle 3 tipos diferentes de materiais".</div>
-                                </div>
-                            </div>
-                        
-                            <div class="faq-item">
-                                <button class="faq-question " data-faq-index="3">
-                                    <span>Como funciona a validação das ações sustentáveis?</span>
-                                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="6 9 12 15 18 9"/>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer ">
-                                    <div class="faq-answer-content">A validação é híbrida e rigorosa. Primeiro, o vídeo enviado passa por regras automáticas. Depois, uma IA analisa o conteúdo como apoio. Por fim, casos complexos passam por revisão manual humana.</div>
-                                </div>
-                            </div>
-                        
-                            <div class="faq-item">
-                                <button class="faq-question " data-faq-index="4">
-                                    <span>A IA decide tudo sozinha?</span>
-                                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="6 9 12 15 18 9"/>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer ">
-                                    <div class="faq-answer-content">Não! A IA é apenas uma ferramenta de apoio. A decisão final sempre considera múltiplos fatores: regras de negócio, análise da IA e, quando necessário, revisão humana.</div>
-                                </div>
-                            </div>
-                        
-                            <div class="faq-item">
-                                <button class="faq-question " data-faq-index="5">
-                                    <span>Como funciona o ranking?</span>
-                                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="6 9 12 15 18 9"/>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer ">
-                                    <div class="faq-answer-content">O ranking é global e organizado por pontuação acumulada. Todos os usuários competem de forma justa, e sua posição determina seu tier atual.</div>
-                                </div>
-                            </div>
-                        
-                            <div class="faq-item">
-                                <button class="faq-question " data-faq-index="6">
-                                    <span>O que são tiers?</span>
-                                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="6 9 12 15 18 9"/>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer ">
-                                    <div class="faq-answer-content">Tiers são níveis de classificação: Ferro (iniciante), Bronze (engajado), Prata (comprometido), Ouro (dedicado), Diamante (expert) e Sustentabilístico (mestre absoluto).</div>
-                                </div>
-                            </div>
-                        
-                            <div class="faq-item">
-                                <button class="faq-question " data-faq-index="7">
-                                    <span>O que é o login diário?</span>
-                                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="6 9 12 15 18 9"/>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer ">
-                                    <div class="faq-answer-content">O login diário recompensa consistência. Ao acessar a plataforma todos os dias, você mantém uma sequência ativa (streak) e ganha pontos bônus.</div>
-                                </div>
-                            </div>
-                        
-                            <div class="faq-item">
-                                <button class="faq-question " data-faq-index="8">
-                                    <span>Como funcionam as recompensas?</span>
-                                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="6 9 12 15 18 9"/>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer ">
-                                    <div class="faq-answer-content">A principal recompensa é o subsídio na conta de energia elétrica, que pode chegar a até R$ 300 por mês para os usuários mais engajados.</div>
-                                </div>
-                            </div>
-                        
-                            <div class="faq-item">
-                                <button class="faq-question " data-faq-index="9">
-                                    <span>O que acontece se tentar "farmar" pontos?</span>
-                                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="6 9 12 15 18 9"/>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer ">
-                                    <div class="faq-answer-content">O sistema possui múltiplas camadas de proteção contra fraudes. Tentativas de manipulação são detectadas automaticamente e podem resultar em perda de pontos ou banimento.</div>
-                                </div>
-                            </div>
-                        
-                    </div>
-
-                    <div class="mt-6" style="background: linear-gradient(135deg, var(--green-primary), #10B981); border-radius: 16px; padding: 2rem; text-align: center; color: white;">
-                        <h2 class="heading-md mb-2">Ainda tem dúvidas?</h2>
-                        <p style="color: rgba(255, 255, 255, 0.9); margin-bottom: 1.5rem;">
-                            Nossa equipe está pronta para ajudar você
-                        </p>
-                        <a href="mailto:ecovolt@fiap.com.br" class="btn" style="background: white; color: var(--green-primary);">
-                            Entre em Contato
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-</main>
-<footer id="footer">
-  <div class="container footer-content">
-    <div class="footer-grid">
-      <div class="footer-about">
-        <div class="footer-logo">
-          <div class="logo-icon"><img src="../assets/image/ecovolt_logo_sem_fundo.png" alt="EcoVolt logo"></div>
-          <span class="logo-text">EcoVolt</span>
-        </div>
-        <p class="footer-description">Gamificação sustentável integrada à plataforma SoulUp. Incentivando ações sustentáveis reais por meio de pontuação, missões e recompensas.</p>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div class="footer-links">
-        <h3>Links Rápidos</h3>
-        <ul><li><a href="../Index.html">Início</a></li><li><a href="Sobre.html">Sobre</a></li><li><a href="PerfilUsuario.html">Perfil</a></li><li><a href="FAQ.html">FAQ</a></li></ul>
-      </div>
-      <div class="footer-social">
-        <h3>Conecte-se</h3>
-        <div class="social-links">
-          <a href="https://github.com/ecovolt-project" target="_blank" rel="noopener noreferrer" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-          <a href="mailto:ecovolt@fiap.com.br" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+
+      <ul class="nav-links">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="../login.html" class="btn btn-primary">Login</a></li>
+        <li><button id="theme-toggle" class="theme-toggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="faq-section">
+      <h1 class="page-title">Perguntas Frequentes</h1>
+      <p class="page-subtitle">Tire suas dúvidas sobre o EcoVolt</p>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>O que é o EcoVolt?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>É uma solução gamificada para incentivar ações sustentáveis reais dentro da plataforma SoulUp.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Como o usuário ganha pontos?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Por meio de ações sustentáveis validadas, missões concluídas, login diário e interações relevantes.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Como uma ação é validada?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>O usuário envia um vídeo. O sistema utiliza regras determinísticas, análise contextual, apoio de IA e revisão manual em casos específicos.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>O anúncio substitui o login diário?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Não. O anúncio apenas recupera a sequência perdida, mas não cria um login válido artificial.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Como funcionam os tiers?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Os usuários são classificados em Ferro, Bronze, Prata, Ouro, Diamante e Sustentabilístico, com progressão mensal baseada no ranking.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Qual é a principal recompensa?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>O primeiro colocado de cada tier pode receber subsídio na conta de energia, respeitando o teto definido pelo projeto.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>O sistema evita fraude?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Sim. Há limites de repetição, redução de pontuação por ações repetidas e validação híbrida dos envios.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2026 EcoVolt - Challenge FIAP. Todos os direitos reservados.</p>
-    </div>
-  </div>
-</footer>
+    </section>
+  </main>
 
-<script src="../assets/js/FAQ.js"></script>
+  <footer>
+    <p>&copy; 2026 EcoVolt - FIAP Challenge SoulUp | Desenvolvido pela equipe EcoVolt</p>
+  </footer>
+
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/faq.js"></script>
 </body>
 </html>

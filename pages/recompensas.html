@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recompensas - EcoVolt</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/recompensas.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">EcoVolt</div>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="enviar-acao.html">Enviar Ação</a></li>
+        <li><a href="missoes.html">Missões</a></li>
+        <li><a href="ranking.html">Ranking</a></li>
+        <li><a href="recompensas.html">Recompensas</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="#" onclick="logout()" class="btn btn-secondary">Sair</a></li>
+        <li><button id="theme-toggle" class="theme-toggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="rewards-section">
+      <h1 class="page-title">Recompensas</h1>
+
+      <!-- Main Reward -->
+      <div class="card main-reward-card">
+        <div class="reward-featured">
+          <div class="reward-icon-large">💡</div>
+          <h2>Conta de luz subsidiada</h2>
+          <div class="reward-value">Até R$ 300</div>
+          <p class="reward-description">Disponível para o 1º lugar de cada tier</p>
+          
+          <div class="your-progress">
+            <h3>Seu progresso</h3>
+            <p>Você está em <strong>12º no Bronze</strong></p>
+            <p class="progress-tip">Suba para o 1º lugar para concorrer!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Rewards -->
+      <h2 class="section-title">Outras recompensas</h2>
+      
+      <div class="grid grid-3">
+        <div class="card reward-card">
+          <div class="reward-icon">🌟</div>
+          <h3>Selo Eco Iniciante</h3>
+          <p class="reward-requirement">Completar 10 ações sustentáveis</p>
+          <div class="badge badge-success mt-1">Desbloqueado</div>
+        </div>
+
+        <div class="card reward-card">
+          <div class="reward-icon">🎫</div>
+          <h3>Cupom parceiro sustentável</h3>
+          <p class="reward-requirement">Alcançar tier Prata</p>
+          <div class="badge badge-info mt-1">Bloqueado</div>
+        </div>
+
+        <div class="card reward-card">
+          <div class="reward-icon">🌱</div>
+          <h3>Experiência sustentável</h3>
+          <p class="reward-requirement">Top 3 no ranking mensal</p>
+          <div class="badge badge-info mt-1">Bloqueado</div>
+        </div>
+
+        <div class="card reward-card">
+          <div class="reward-icon">🖼️</div>
+          <h3>Moldura de perfil especial</h3>
+          <p class="reward-requirement">100 dias de login consecutivo</p>
+          <div class="badge badge-info mt-1">Bloqueado</div>
+        </div>
+
+        <div class="card reward-card">
+          <div class="reward-icon">🏆</div>
+          <h3>Troféu Sustentável</h3>
+          <p class="reward-requirement">Tier Sustentabilístico</p>
+          <div class="badge badge-info mt-1">Bloqueado</div>
+        </div>
+
+        <div class="card reward-card">
+          <div class="reward-icon">⚡</div>
+          <h3>Bônus de XP 2x</h3>
+          <p class="reward-requirement">Completar todas missões semanais</p>
+          <div class="badge badge-warning mt-1">Em progresso</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 EcoVolt - FIAP Challenge SoulUp | Desenvolvido pela equipe EcoVolt</p>
+  </footer>
+
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/auth.js"></script>
+</body>
+</html>

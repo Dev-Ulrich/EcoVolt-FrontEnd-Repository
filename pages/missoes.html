@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Missões - EcoVolt</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/missoes.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">EcoVolt</div>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="enviar-acao.html">Enviar Ação</a></li>
+        <li><a href="missoes.html">Missões</a></li>
+        <li><a href="ranking.html">Ranking</a></li>
+        <li><a href="recompensas.html">Recompensas</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="#" onclick="logout()" class="btn btn-secondary">Sair</a></li>
+        <li><button id="theme-toggle" class="theme-toggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="missions-section">
+      <h1 class="page-title">Missões da semana</h1>
+
+      <!-- Progress Summary -->
+      <div class="card progress-card">
+        <h2>Progresso semanal</h2>
+        <div class="mission-progress">
+          <div class="progress-info">
+            <span>3 de 5 missões concluídas</span>
+            <span class="progress-percent">60%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 60%"></div>
+          </div>
+        </div>
+        <div class="progress-tip">
+          💡 <strong>Dica:</strong> Completar missões ajuda a recuperar a pontuação de ações repetidas.
+        </div>
+      </div>
+
+      <!-- Easy Missions -->
+      <div class="mission-category">
+        <h2 class="category-title">🟢 Fáceis</h2>
+        <div class="grid grid-2">
+          <div class="card mission-card completed">
+            <div class="mission-header">
+              <h3>Fazer login por 3 dias</h3>
+              <span class="badge badge-success">Concluída</span>
+            </div>
+            <div class="mission-reward">+50 XP</div>
+            <div class="mission-progress-mini">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%"></div>
+              </div>
+              <span class="progress-text">3/3 dias</span>
+            </div>
+          </div>
+
+          <div class="card mission-card completed">
+            <div class="mission-header">
+              <h3>Curtir 5 ações sustentáveis</h3>
+              <span class="badge badge-success">Concluída</span>
+            </div>
+            <div class="mission-reward">+30 XP</div>
+            <div class="mission-progress-mini">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%"></div>
+              </div>
+              <span class="progress-text">5/5 curtidas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Medium Missions -->
+      <div class="mission-category">
+        <h2 class="category-title">🟡 Médias</h2>
+        <div class="grid grid-2">
+          <div class="card mission-card in-progress">
+            <div class="mission-header">
+              <h3>Enviar 2 ações sustentáveis validadas</h3>
+              <span class="badge badge-warning">Em progresso</span>
+            </div>
+            <div class="mission-reward">+100 XP</div>
+            <div class="mission-progress-mini">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 50%"></div>
+              </div>
+              <span class="progress-text">1/2 ações</span>
+            </div>
+          </div>
+
+          <div class="card mission-card">
+            <div class="mission-header">
+              <h3>Comentar em 3 publicações relevantes</h3>
+              <span class="badge badge-info">Pendente</span>
+            </div>
+            <div class="mission-reward">+75 XP</div>
+            <div class="mission-progress-mini">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%"></div>
+              </div>
+              <span class="progress-text">0/3 comentários</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hard Missions -->
+      <div class="mission-category">
+        <h2 class="category-title">🔴 Difícil</h2>
+        <div class="grid grid-2">
+          <div class="card mission-card">
+            <div class="mission-header">
+              <h3>Completar 5 ações diferentes na semana</h3>
+              <span class="badge badge-info">Pendente</span>
+            </div>
+            <div class="mission-reward">+200 XP</div>
+            <div class="mission-progress-mini">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 20%"></div>
+              </div>
+              <span class="progress-text">1/5 ações únicas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 EcoVolt - FIAP Challenge SoulUp | Desenvolvido pela equipe EcoVolt</p>
+  </footer>
+
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/auth.js"></script>
+</body>
+</html>
