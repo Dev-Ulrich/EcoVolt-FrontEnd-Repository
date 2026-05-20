@@ -10,7 +10,7 @@ if (contactForm) {
     if (successMessage) {
       successMessage.textContent = 'Mensagem enviada com sucesso!';
       successMessage.style.display = 'block';
-      successMessage.style.color = var(--accent-green);
+      successMessage.style.color = 'var(--accent-green)';
       successMessage.style.padding = '1rem';
       successMessage.style.borderRadius = '8px';
       successMessage.style.background = 'rgba(46, 230, 107, 0.1)';

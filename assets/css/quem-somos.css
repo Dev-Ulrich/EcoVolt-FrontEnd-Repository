@@ -94,6 +94,12 @@
   border: 1px solid var(--accent-green);
 }
 
+.team-class {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+
 .team-role {
   color: var(--text-secondary);
   line-height: 1.6;
