@@ -96,6 +96,20 @@ body {
     font-weight: 700;
     color: var(--gray-900);
 }
+
+/* Remove underline from logo link and ensure image fits */
+.logo,
+.logo-text {
+    text-decoration: none;
+}
+
+.logo-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
+    border-radius: 8px;
+}
  
 .nav-desktop {
     display: none;
