@@ -1,0 +1,75 @@
+/* Quem Somos Page Styles */
+
+.team-section {
+  padding: 2rem 0;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--accent-green), var(--accent-neon));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.page-subtitle {
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-card {
+  text-align: center;
+  padding: 2.5rem 2rem;
+}
+
+.team-avatar {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.team-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+}
+
+.team-rm {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(46, 230, 107, 0.1);
+  color: var(--accent-green);
+  border-radius: 20px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border: 1px solid var(--accent-green);
+}
+
+.team-role {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2.25rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.125rem;
+    padding: 0 1rem;
+  }
+
+  .team-avatar {
+    font-size: 3rem;
+  }
+}

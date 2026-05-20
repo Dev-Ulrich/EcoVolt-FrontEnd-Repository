@@ -1,0 +1,161 @@
+/* Recompensas Page Styles */
+
+.rewards-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-reward-card {
+  padding: 3rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, rgba(255, 209, 102, 0.15), rgba(242, 201, 76, 0.15));
+  border: 2px solid var(--accent-yellow);
+  text-align: center;
+}
+
+.reward-featured {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.reward-icon-large {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.main-reward-card h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.reward-value {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--accent-yellow), #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.reward-description {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.your-progress {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.your-progress h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.your-progress p {
+  color: var(--text-secondary);
+  margin: 0.5rem 0;
+  font-size: 1.125rem;
+}
+
+.your-progress strong {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.progress-tip {
+  color: var(--accent-yellow);
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.reward-card {
+  text-align: center;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.reward-card:hover {
+  transform: translateY(-10px);
+}
+
+.reward-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.reward-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.reward-requirement {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .main-reward-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .reward-icon-large {
+    font-size: 4rem;
+  }
+
+  .main-reward-card h2 {
+    font-size: 2rem;
+  }
+
+  .reward-value {
+    font-size: 2.5rem;
+  }
+
+  .reward-description {
+    font-size: 1.125rem;
+  }
+
+  .your-progress {
+    padding: 1.5rem;
+  }
+
+  .your-progress p {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .reward-icon {
+    font-size: 3rem;
+  }
+
+  .reward-card {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,135 @@
+/* Missões Page Styles */
+
+.missions-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.progress-card {
+  padding: 2.5rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, rgba(46, 230, 107, 0.05), rgba(0, 255, 136, 0.05));
+  border: 1px solid var(--accent-green);
+}
+
+.progress-card h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.mission-progress {
+  margin-bottom: 1.5rem;
+}
+
+.progress-tip {
+  padding: 1rem;
+  background: rgba(255, 209, 102, 0.1);
+  border: 1px solid var(--accent-yellow);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.progress-tip strong {
+  color: var(--accent-yellow);
+}
+
+.mission-category {
+  margin-bottom: 3rem;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.mission-card {
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--border-color);
+}
+
+.mission-card.completed::before {
+  background: linear-gradient(90deg, var(--accent-green), var(--accent-neon));
+}
+
+.mission-card.in-progress::before {
+  background: linear-gradient(90deg, var(--accent-yellow), #FFD700);
+}
+
+.mission-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.mission-header h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  flex: 1;
+}
+
+.mission-reward {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent-green);
+  margin-bottom: 1rem;
+}
+
+.mission-progress-mini {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mission-progress-mini .progress-bar {
+  height: 8px;
+}
+
+.progress-text {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.mission-card.completed {
+  opacity: 0.8;
+  background: rgba(46, 230, 107, 0.05);
+}
+
+@media (max-width: 768px) {
+  .progress-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .mission-card {
+    padding: 1.5rem;
+  }
+
+  .mission-header h3 {
+    font-size: 1rem;
+  }
+
+  .category-title {
+    font-size: 1.25rem;
+  }
+}

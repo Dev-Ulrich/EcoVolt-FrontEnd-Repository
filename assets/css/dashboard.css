@@ -1,0 +1,138 @@
+/* Dashboard Page Styles */
+
+.dashboard-section {
+  animation: fadeInUp 0.6s ease;
+}
+
+.dashboard-greeting {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+.stats-grid {
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-green), var(--accent-neon));
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--accent-green);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Journey Card */
+.journey-card {
+  margin-bottom: 2rem;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, rgba(46, 230, 107, 0.05), rgba(0, 255, 136, 0.05));
+}
+
+.journey-card h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.journey-progress {
+  margin-bottom: 1.5rem;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.progress-percent {
+  color: var(--accent-green);
+  font-weight: 700;
+}
+
+/* Info Cards */
+.info-card {
+  padding: 2rem;
+}
+
+.info-card h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.card-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.card-link {
+  color: var(--accent-green);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.card-link:hover {
+  transform: translateX(5px);
+  color: var(--accent-neon);
+}
+
+@media (max-width: 768px) {
+  .dashboard-greeting {
+    font-size: 2rem;
+  }
+
+  .stat-icon {
+    font-size: 2rem;
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
+  }
+
+  .journey-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .journey-card h2 {
+    font-size: 1.5rem;
+  }
+}
