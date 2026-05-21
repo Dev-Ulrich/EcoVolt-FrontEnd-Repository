@@ -77,6 +77,23 @@ body {
   right: 1rem;
 }
 
+.form-message {
+  display: none;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form-message.error {
+  display: block;
+  color: #E53E3E; /* red */
+}
+
+.form-message.success {
+  display: block;
+  color: var(--accent-green);
+}
+
 @media (max-width: 480px) {
   .login-container {
     padding: 1rem;

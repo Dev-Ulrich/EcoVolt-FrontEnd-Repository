@@ -27,6 +27,29 @@
   color: var(--text-primary);
 }
 
+.form-message {
+  display: none;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form-message.success {
+  display: block;
+  color: var(--accent-green);
+  background: rgba(46, 230, 107, 0.06);
+  border: 1px solid var(--accent-green);
+}
+
+.form-message.error {
+  display: block;
+  color: #E53E3E;
+  background: rgba(229, 62, 62, 0.06);
+  border: 1px solid #E53E3E;
+}
+
 .info-item {
   padding: 1rem 0;
   border-bottom: 1px solid var(--border-color);

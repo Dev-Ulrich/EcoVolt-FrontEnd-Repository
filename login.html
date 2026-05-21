@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="assets/css/login.css">
 </head>
 <body>
-  <div class="login-container">
-    <div class="login-card card">
+  <main class="login-container">
+    <section class="login-card card">
       <div class="login-logo">EcoVolt</div>
 
       <h1>Entrar no EcoVolt</h1>
@@ -26,7 +26,7 @@
           <input type="password" id="password" placeholder="Digite sua senha" required>
         </div>
 
-        <div id="error-message" style="display: none;"></div>
+        <div id="error-message" class="form-message"></div>
 
         <button type="submit" class="btn btn-primary">Entrar</button>
       </form>
@@ -36,8 +36,8 @@
       </div>
 
       <button id="theme-toggle" class="theme-toggle theme-toggle-fixed">🌙</button>
-    </div>
-  </div>
+    </section>
+  </main>
 
   <script src="assets/js/theme.js"></script>
   <script src="assets/js/login.js"></script>

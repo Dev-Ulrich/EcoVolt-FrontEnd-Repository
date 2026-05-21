@@ -33,3 +33,16 @@ if (window.location.pathname.includes('/pages/')) {
     displayUserName();
   });
 }
+
+// Attach logout handler to elements with .logout-btn (no inline onclick)
+document.addEventListener('DOMContentLoaded', () => {
+  const logoutButtons = document.querySelectorAll('.logout-btn');
+  if (logoutButtons && logoutButtons.length) {
+    logoutButtons.forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        logout();
+      });
+    });
+  }
+});
