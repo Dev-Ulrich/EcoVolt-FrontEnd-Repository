@@ -51,6 +51,33 @@ body {
   overflow-x: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
+.form-message {
+  display: none;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form-message.success {
+  display: block;
+  color: var(--accent-green);
+  background: rgba(46, 230, 107, 0.1);
+  border: 1px solid var(--accent-green);
+}
+
+.form-message.error {
+  display: block;
+  color: #EF4444;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid #EF4444;
+}
+
 /* Header & Navigation */
 header {
   background-color: var(--bg-card);
@@ -267,6 +294,14 @@ label {
   transition: width 0.5s ease;
   position: relative;
 }
+
+.progress-0 { width: 0%; }
+.progress-20 { width: 20%; }
+.progress-50 { width: 50%; }
+.progress-60 { width: 60%; }
+.progress-62 { width: 62%; }
+.progress-80 { width: 80%; }
+.progress-100 { width: 100%; }
 
 .progress-fill::after {
   content: '';

@@ -38,11 +38,11 @@ if (actionTypeSelect) {
     const selectedAction = e.target.value;
 
     if (selectedAction && actionData[selectedAction]) {
-      actionDetails.style.display = 'block';
+      actionDetails.classList.remove('hidden');
       odsDisplay.textContent = actionData[selectedAction].ods;
       pointsDisplay.textContent = actionData[selectedAction].points;
     } else {
-      actionDetails.style.display = 'none';
+      actionDetails.classList.add('hidden');
     }
   });
 }
@@ -53,22 +53,20 @@ if (actionForm) {
 
     // Show success message
     if (submitMessage) {
+      submitMessage.classList.remove('hidden');
+      submitMessage.classList.add('form-message', 'success');
       submitMessage.textContent = 'Ação enviada com sucesso! Status: Em análise.';
-      submitMessage.style.display = 'block';
-      submitMessage.style.color = 'var(--accent-green)';
-      submitMessage.style.padding = '1rem';
-      submitMessage.style.borderRadius = '12px';
-      submitMessage.style.background = 'rgba(46, 230, 107, 0.1)';
-      submitMessage.style.border = '1px solid var(--accent-green)';
-      submitMessage.style.marginBottom = '1rem';
-      submitMessage.style.textAlign = 'center';
-      submitMessage.style.fontWeight = '600';
     }
 
     // Reset form
     setTimeout(() => {
       actionForm.reset();
-      actionDetails.style.display = 'none';
+      actionDetails.classList.add('hidden');
+      if (submitMessage) {
+        submitMessage.classList.add('hidden');
+        submitMessage.classList.remove('success');
+        submitMessage.textContent = '';
+      }
       
       // Redirect to validacoes page
       setTimeout(() => {

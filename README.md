@@ -184,7 +184,7 @@ O projeto EcoVolt foi desenvolvido de forma multidisciplinar, contemplando entre
 | Prototipação | **Figma** | Apoio na criação e visualização das telas do sistema |
 | Versionamento | **Git e GitHub** | Controle de versão, colaboração entre integrantes e hospedagem pública do repositório |
 
-> Este repositório contém principalmente a entrega de **Front-End** do EcoVolt. As tecnologias de **Python**, **Java**, **Banco de Dados** e **Watson Assistant** fazem parte da solução acadêmica completa desenvolvida para o Challenge.
+> Este repositório contém principalmente a entrega de **Front-End** do EcoVolt. As tecnologias de **Python**, **Java**, **Banco de Dados** e **Chat Bot** fazem parte da solução acadêmica completa desenvolvida para o Challenge.
 
 ---
 
@@ -475,12 +475,9 @@ Projeto desenvolvido pela equipe **EcoVolt**, da turma **1TDSPW** da **FIAP**.
 | Integrante | RM | Turma | GitHub | LinkedIn |
 |-----------|----|-------|--------|----------|
 | Victor Ulrich Costa Alves da Silva | 568634 | 1TDSPW | [https://github.com/Dev-Ulrich](https://github.com/Dev-Ulrich) | [https://www.linkedin.com/in/victorulrichcosta/](https://www.linkedin.com/in/victorulrichcosta/) |
-| Matheus Pereira da Silva Franco | 569315 | 1TDSPW | [https://github.com/MatheusPSFranco](https://github.com/MatheusPSFranco) | [https://github.com/MatheusPSFranco](https://github.com/MatheusPSFranco) |
+| Matheus Pereira da Silva Franco | 569315 | 1TDSPW | [https://github.com/MatheusPSFranco](https://github.com/MatheusPSFranco) | [https://www.linkedin.com/in/matheus-pereira-da-silva-franco-b7a7b03b7/](https://www.linkedin.com/in/matheus-pereira-da-silva-franco-b7a7b03b7/) |
 | Matheus Luca Fouad Barragão | 572228 | 1TDSPW | [https://github.com/MatheusLuca](https://github.com/MatheusLuca) | [https://www.linkedin.com/in/matheusbarragao/](https://www.linkedin.com/in/matheusbarragao/) |
 | Arthur da Silva Santana | 571075 | 1TDSPW | [https://github.com/arthursantana1521](https://github.com/arthursantana1521) | [https://www.linkedin.com/in/arthur-da-silva-santana-a6061a310/](https://www.linkedin.com/in/arthur-da-silva-santana-a6061a310/) |
-
-> Observação: caso algum integrante ainda não possua LinkedIn, recomenda-se substituir o link temporário pelo perfil correto antes da entrega final.
-
 ---
 
 ## Contato

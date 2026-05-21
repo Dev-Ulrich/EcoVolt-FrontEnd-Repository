@@ -21,6 +21,7 @@
       <ul class="nav-links">
         <li><a href="dashboard.html">Dashboard</a></li>
         <li><a href="enviar-acao.html">Enviar Ação</a></li>
+        <li><a href="validacoes.html">Validações</a></li>
         <li><a href="missoes.html">Missões</a></li>
         <li><a href="ranking.html">Ranking</a></li>
         <li><a href="recompensas.html">Recompensas</a></li>
@@ -50,7 +51,7 @@
             </select>
           </div>
 
-          <div class="action-details" id="action-details" style="display: none;">
+          <div class="action-details hidden" id="action-details">
             <div class="detail-item">
               <strong>ODS relacionada:</strong>
               <span id="ods-display">ODS 12 — Consumo e Produção Responsáveis</span>
@@ -88,7 +89,7 @@
             </ul>
           </div>
 
-          <div id="submit-message" style="display: none;"></div>
+          <div id="submit-message" class="hidden"></div>
 
           <button type="submit" class="btn btn-primary">Enviar para validação</button>
         </form>

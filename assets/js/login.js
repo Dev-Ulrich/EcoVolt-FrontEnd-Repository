@@ -29,13 +29,8 @@ if (loginForm) {
       // Show error
       if (errorMessage) {
         errorMessage.textContent = 'Usuário ou senha inválidos.';
-        errorMessage.style.display = 'block';
-        errorMessage.style.color = '#EF4444';
-        errorMessage.style.padding = '1rem';
-        errorMessage.style.borderRadius = '8px';
-        errorMessage.style.background = 'rgba(239, 68, 68, 0.1)';
-        errorMessage.style.border = '1px solid #EF4444';
-        errorMessage.style.marginTop = '1rem';
+        errorMessage.classList.remove('hidden');
+        errorMessage.classList.add('error');
       }
     }
   });
