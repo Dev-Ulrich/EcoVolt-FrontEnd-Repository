@@ -20,7 +20,7 @@
 - [Credenciais de Teste](#credenciais-de-teste)
 - [Prévia Visual do Projeto](#prévia-visual-do-projeto)
 - [Roadmap](#roadmap)
-- [Repositório](#repositório)
+- [Repositório e Video Pitch](#repositório-e-video-pitch)
 - [Equipe](#equipe)
 - [Contato](#contato)
 - [Licença](#licença)
@@ -458,12 +458,18 @@ As imagens abaixo representam algumas das principais telas desenvolvidas no proj
 
 ---
 
-## Repositório
+## Repositório e Video Pitch
 
 Link público do projeto no GitHub:
 
 ```txt
 https://github.com/Dev-Ulrich/EcoVolt-FrontEnd-Repository
+```
+
+Link público do video pitch no Youtube:
+
+```txt
+https://youtube.com/shorts/2JfuTv1l4NU
 ```
 
 ---
